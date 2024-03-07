@@ -1,0 +1,30 @@
+CHECKLIST
+
+PART ONE: The start
+=========================================================
+ Add in the following code to INDEX.HTML:
+: <!DOCTYPE html>
+: <html lang="en">
+:<html>
+: <head>
+:      <meta charset="utf-8">
+:      <meta name="viewport" content="width=device-width, initial-scale=1">
+:      <meta name="description" content="[description of website]">
+:      <link rel="stylesheet" href="[link to CSS]">
+:      <title>[tab title]</title>
+: </head>
+:</html>
+
+ In the CSS, add the following variables:
+ TEXT FORMATTING ------ h1, h2, h3, h4, h5, h6, p
+ NAVIGATION BAR ------- a, nav, nav .a, nav .a:hover
+ FLOATS --------------- wrapper, floatleft, floatright
+ OTHER STUFF ---------- body, main, header, article, footer, aside
+=========================================================
+
+PART TWO:
+=========================================================
+- Add INTRODUCTION.TXT and ADVANTAGES.TXT to INDEX.HTML
+- Add images
+- Set margins and padding
+=========================================================
