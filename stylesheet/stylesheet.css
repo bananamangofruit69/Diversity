@@ -25,6 +25,7 @@ article {
     margin: 60pt;
 }
 
+/** BACK TO TOP BUTTON **/
 footer button{
     text-align: center;
     background-color: black;
@@ -43,6 +44,30 @@ footer button:hover{
     padding: 2pt;
     color: white;
     text-decoration: none;
+}
+
+/** SKIP TO CONTENT **/
+nav a.link {
+    position: absolute;
+    overflow: hidden;
+    background-image: linear-gradient(black, black);
+    color: black;
+    text-decoration: none;
+    left: -10000pt;
+    width: 1pt;
+    height: 1pt;
+}
+
+nav a.link:focus {
+    position: relative;
+    overflow: visible;
+    background-image: linear-gradient(orange, orange);
+    color: black;
+    text-decoration: none;
+    padding: 10pt;
+    left: 0pt;
+    width: auto;
+    height: auto;
 }
 
 /* NAVIGATION BAR */
