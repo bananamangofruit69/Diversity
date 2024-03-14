@@ -45,7 +45,7 @@ footer.footer{
     font-size: 8pt;
 }
 
-@media  (width > 1000px) {
+@media  (width > 800px) {
     body {
         background-image: linear-gradient(white, white);
         margin: 0pt;
@@ -141,21 +141,24 @@ nav {
     padding: 10pt;
 }
 
+nav.menu {
+    position: absolute;
+    position: -webkit-absolute;
+    overflow: hidden;
+    left: -10000pt;
+    top:0;
+    background-image: linear-gradient(black, black);
+    color: white;
+    text-decoration: none;
+    padding: 10pt;
+}
+
 a.on {
     border-bottom: 100pt;
     background-image: linear-gradient(blue, blue);
 }
 
-nav a.close {
-    position: absolute;
-    overflow: hidden;
-    background-image: linear-gradient(black, black);
-    color: black;
-    text-decoration: none;
-    left: -10000pt;
-    width: 1pt;
-    height: 1pt;
-}
+/** NAV BAR WHEN LESS THAN 500PX **/
 
 @media (width < 500px) {
     nav a {
@@ -166,27 +169,68 @@ nav a.close {
         padding: 10pt;
     }
     
-    nav a:hover:not(a.on) {
+    nav a:hover:not(a.on){
         display: block;
         background-image: linear-gradient(grey, grey);
         color: white;
         text-decoration: none;
         padding: 10pt;
     }
-    
-    nav {
-        position: sticky;
-        position: -webkit-sticky;
-        top:0;
+
+
+    nav.menu a:hover:not(a.on){
+        display: block;
         background-image: linear-gradient(black, black);
         color: white;
         text-decoration: none;
         padding: 10pt;
     }
     
+    nav.menu {
+        position: relative;
+        position: -webkit-relative;
+        overflow: visible;
+        left: 0pt;
+        top:0;
+        background-image: linear-gradient(black, black);
+        color: white;
+        text-decoration: none;
+        padding: 10pt;
+        width: auto;
+        height: auto;
+    }
+
+    nav.menu:hover+nav:hover {
+        position: relative;
+        position: -webkit-relative;
+        overflow: visible;
+        left: 0pt;
+        top:0;
+        background-image: linear-gradient(black, black);
+        color: white;
+        text-decoration: none;
+        padding: 10pt;
+    }
+
+    nav.menu:not(nav.menu:hover)+nav:not(nav:hover) {
+        position: absolute;
+        position: -webkit-absolute;
+        overflow: hidden;
+        left: -10000pt;
+        top:0;
+        background-image: linear-gradient(black, black);
+        color: white;
+        text-decoration: none;
+        padding: 10pt;
+    }
+
     a.on {
         border-bottom: 100pt;
         background-image: linear-gradient(blue, blue);
-    }  
+    } 
     
+    a.off {
+        border-bottom: 100pt;
+        background-image: linear-gradient(black,black);
+    }
 }
