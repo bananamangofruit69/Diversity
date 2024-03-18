@@ -20,6 +20,14 @@ body {
     margin: 0pt;
 }
 
+img {
+    display: flex;
+    height: auto;
+    max-height: 300pt;
+    max-width: fit-content;
+    width: 100%;
+}
+
 article {
     flex-wrap: wrap;
     margin: 60pt;
