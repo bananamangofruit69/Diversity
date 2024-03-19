@@ -168,7 +168,7 @@ a.on {
 
 /** NAV BAR WHEN LESS THAN 500PX **/
 
-@media (width < 500px) {
+@media (width < 800px) {
     nav a {
         display: block;
         font-family: Verdana, sans-serif;
