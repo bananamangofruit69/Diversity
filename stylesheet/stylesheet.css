@@ -16,13 +16,14 @@ color: black;
 
 /* MAIN SETTINGS */
 body {
-    align-items: flex-start;
     background-image: linear-gradient(white, white);
     margin: 0pt;
 }
 
 img {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     height: auto;
     max-height: 300pt;
     max-width: fit-content;
